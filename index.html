@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO OPTIMIZATION FOR "BSI & REKAN" -->
+    <title>BSI & REKAN | Pengacara Terpercaya Sangatta - Kutai Timur</title>
+    <meta name="description" content="BSI & REKAN Sangatta Utara. Layanan hukum profesional di Jl. Danau Limboto 207, Kutai Timur. Ahli Pidana, Perdata, Tanah, PHI, dan PTUN.">
+    <meta name="keywords" content="BSI & Rekan Sangatta, Pengacara Sangatta, Advokat Kutai Timur, Pengacara Kalimantan Timur, Kantor Hukum Sangatta, Bantuan Hukum Kutai Timur, Jl Danau Limboto 207 Sangatta">
+    
+    <!-- JSON-LD Local Business -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LegalService",
+      "name": "BSI & REKAN - Kantor Hukum Sangatta",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Jl. Danau Limboto 207, Kec. Sangatta Utara",
+        "addressLocality": "Kab. Kutai Timur",
+        "addressRegion": "Kalimantan Timur",
+        "postalCode": "75611",
+        "addressCountry": "ID"
+      },
+      "telephone": "+62811591305",
+      "priceRange": "$$",
+      "url": "https://bsirekan.com"
+    }
+    </script>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        :root { --gold: #D4AF37; --navy: #0A192F; }
+        body { font-family: 'Montserrat', sans-serif; scroll-behavior: smooth; }
+        h1, h2, h3, .serif { font-family: 'Playfair Display', serif; }
+        .gold-gradient { background: linear-gradient(135deg, #D4AF37 0%, #B8860B 100%); }
+        .nav-active { color: var(--gold) !important; border-bottom: 2px solid var(--gold); }
+        .page-content { display: none; min-height: 80vh; }
+        .page-content.active { display: block; animation: fadeIn 0.8s ease; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+        .seo-text { line-height: 2; color: #4B5563; text-align: justify; font-size: 1.05rem; }
+        .profile-image-container { position: relative; width: 100%; max-width: 400px; border-radius: 20px; overflow: hidden; }
+        .profile-image-container img { width: 100%; height: auto; object-fit: cover; }
+    </style>
+</head>
+<body class="bg-slate-50">
+
+    <!-- Preloader -->
+    <div id="loader" class="fixed inset-0 z-[100] bg-white flex items-center justify-center transition-opacity duration-500">
+        <div class="text-center">
+            <div class="inline-block w-12 h-12 border-4 border-amber-600 border-t-transparent rounded-full animate-spin"></div>
+            <p class="mt-4 font-bold text-amber-800 tracking-widest uppercase">BSI & REKAN - SANGATTA</p>
+        </div>
+    </div>
+
+    <!-- Header Navigation -->
+    <header class="fixed w-full z-50 bg-white/95 backdrop-blur-md shadow-sm border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 lg:px-8 flex justify-between h-24 items-center">
+            <div class="flex items-center cursor-pointer" onclick="navigateTo('home')">
+                <div class="p-2 bg-blue-950 rounded-lg mr-3 shadow-lg">
+                    <i class="fas fa-balance-scale text-2xl text-white"></i>
+                </div>
+                <div>
+                    <h1 class="text-2xl font-bold text-blue-950 leading-none">BSI <span class="text-amber-700">&</span> REKAN</h1>
+                    <p class="text-[10px] tracking-[0.2em] text-gray-500 font-bold uppercase mt-1">Law Firm Kutai Timur</p>
+                </div>
+            </div>
+            <nav class="hidden lg:flex items-center space-x-10">
+                <button onclick="navigateTo('home')" class="nav-btn font-bold text-blue-900 transition hover:text-amber-700 nav-active" data-page="home">BERANDA</button>
+                <button onclick="navigateTo('profil')" class="nav-btn font-bold text-blue-900 transition hover:text-amber-700" data-page="profil">PROFIL</button>
+                <button onclick="navigateTo('layanan')" class="nav-btn font-bold text-blue-900 transition hover:text-amber-700" data-page="layanan">LAYANAN</button>
+                <button onclick="navigateTo('kontak')" class="nav-btn font-bold text-blue-900 transition hover:text-amber-700" data-page="kontak">ALAMAT & KONTAK</button>
+                <a href="https://wa.me/62811536161" class="gold-gradient text-white px-8 py-3 rounded-md font-bold text-sm shadow-lg hover:shadow-xl transition transform hover:-translate-y-1">KONSULTASI</a>
+            </nav>
+            <button class="lg:hidden text-blue-950 text-2xl" id="mobile-toggle"><i class="fas fa-bars"></i></button>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="fixed inset-0 z-[60] bg-blue-950 hidden flex flex-col items-center justify-center space-y-8 text-white">
+        <button id="close-menu" class="absolute top-8 right-8 text-3xl"><i class="fas fa-times"></i></button>
+        <button onclick="navigateTo('home')" class="text-2xl font-bold">BERANDA</button>
+        <button onclick="navigateTo('profil')" class="text-2xl font-bold">PROFIL</button>
+        <button onclick="navigateTo('layanan')" class="text-2xl font-bold">LAYANAN</button>
+        <button onclick="navigateTo('kontak')" class="text-2xl font-bold">KONTAK</button>
+    </div>
+
+    <main class="pt-24">
+        <!-- PAGE: HOME -->
+        <div id="page-home" class="page-content active">
+            <!-- Hero Section -->
+            <section class="relative min-h-[90vh] flex items-center bg-slate-900 text-white overflow-hidden">
+                <div class="absolute inset-0 opacity-40">
+                    <div class="absolute inset-0 bg-blue-950 mix-blend-multiply"></div>
+                </div>
+                <div class="max-w-7xl mx-auto px-4 lg:px-8 relative z-10 py-20">
+                    <div class="lg:w-2/3" data-aos="fade-up">
+                        <span class="inline-block px-4 py-1 bg-amber-700 text-white text-xs font-bold tracking-[0.3em] rounded-full mb-6 uppercase">Kantor Hukum Kutai Timur</span>
+                        <h2 class="text-5xl lg:text-7xl font-bold mb-8 leading-tight">
+                            BSI <span class="text-amber-500 font-serif italic text-4xl lg:text-6xl">& REKAN</span> <br> Sangatta Utara
+                        </h2>
+                        <p class="text-xl text-slate-300 mb-10 max-w-2xl leading-relaxed font-light">
+                            Representasi hukum profesional dan berintegritas di Sangatta Utara. Berlokasi di <strong>Jl. Danau Limboto 207</strong>, kami siap memberikan solusi hukum terbaik untuk Anda.
+                        </p>
+                        <div class="flex flex-wrap gap-5">
+                            <button onclick="navigateTo('layanan')" class="px-10 py-4 bg-white text-blue-950 font-bold rounded-md hover:bg-amber-600 hover:text-white transition-all shadow-xl">Lihat Layanan</button>
+                            <a href="https://wa.me/62811536161" class="px-10 py-4 border-2 border-amber-600 text-amber-600 font-bold rounded-md hover:bg-amber-600 hover:text-white transition-all">WhatsApp Sekarang</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SEO Block: Local Presence -->
+            <section class="py-24 bg-white">
+                <div class="max-w-7xl mx-auto px-4 lg:px-8">
+                    <div class="grid lg:grid-cols-2 gap-16 items-center">
+                        <div data-aos="fade-right">
+                            <h3 class="text-amber-700 font-bold tracking-widest mb-4">TENTANG KAMI</h3>
+                            <h2 class="text-4xl font-bold text-blue-950 mb-8 leading-snug">Partner Hukum Terpercaya di Kutai Timur</h2>
+                            <div class="seo-text">
+                                <p class="mb-6">Mencari keadilan di <strong>Kutai Timur</strong> membutuhkan pengacara yang tidak hanya ahli, tetapi juga memahami kondisi sosial di wilayah <strong>Kalimantan Timur</strong>. Kantor hukum <strong>BSI & Rekan</strong> hadir di Sangatta Utara untuk memenuhi kebutuhan tersebut.</p>
+                                <p class="mb-6">Berpusat di <strong>Jl. Danau Limboto 207, Sangatta Utara</strong>, kami memiliki visi untuk memberikan pendampingan hukum yang transparan dan profesional bagi setiap klien, baik individu maupun korporasi.</p>
+                            </div>
+                        </div>
+                        <div class="grid grid-cols-2 gap-4" data-aos="fade-left">
+                            <div class="p-8 bg-blue-50 rounded-2xl text-center">
+                                <h4 class="text-4xl font-bold text-amber-700">10+</h4>
+                                <p class="text-xs font-bold text-blue-950 uppercase mt-2">Ahli Hukum</p>
+                            </div>
+                            <div class="p-8 bg-blue-900 text-white rounded-2xl text-center">
+                                <h4 class="text-4xl font-bold text-amber-500">24/7</h4>
+                                <p class="text-xs font-bold text-blue-100 uppercase mt-2">Siap Melayani</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- PAGE: PROFIL (EXTENDED) -->
+        <div id="page-profil" class="page-content bg-white py-24">
+            <div class="max-w-7xl mx-auto px-4 lg:px-8">
+                <div class="grid lg:grid-cols-2 gap-16 items-start mb-20">
+                    <div class="profile-image-container shadow-2xl" data-aos="zoom-in">
+                        <!-- Placeholder Foto Pengacara Utama -->
+                        <img src="pengacara.png?q=80&w=800&auto=format&fit=crop" alt="Foto Pengacara BSI & REKAN">
+                        <div class="absolute bottom-0 left-0 right-0 bg-blue-950/90 p-6 backdrop-blur-sm">
+                            <h3 class="text-white font-bold text-xl uppercase tracking-wider">Advokat Utama</h3>
+                            <p class="text-amber-500 text-sm font-semibold">BSI & REKAN SANGATTA</p>
+                        </div>
+                    </div>
+                    <div data-aos="fade-up">
+                        <h2 class="text-amber-700 font-bold tracking-[0.4em] uppercase mb-4">Profil Firma</h2>
+                        <h1 class="text-4xl font-bold text-blue-950 mb-8">Berdedikasi untuk Keadilan di Sangatta</h1>
+                        <div class="seo-text space-y-6">
+                            <p><strong>BSI & REKAN</strong> merupakan firma hukum yang dibangun atas dasar integritas tinggi dan dedikasi penuh terhadap hak-hak hukum masyarakat di <strong>Kutai Timur</strong>. Kami telah menangani berbagai perkara yang kompleks dengan hasil yang memuaskan bagi klien kami.</p>
+                            <p>Kehadiran kami di <strong>Jl. Danau Limboto 207, Kec. Sangatta Utara</strong>, strategis untuk menjangkau pusat-pusat hukum di Kalimantan Timur, termasuk PN Sangatta dan instansi terkait lainnya.</p>
+                            <div class="bg-slate-50 p-6 rounded-xl border-l-4 border-amber-700">
+                                <h4 class="font-bold text-blue-950 mb-2 italic text-lg">"Hukum Harus Menjadi Instrumen Keadilan bagi Semua."</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PORTFOLIO & EXPERTISE SECTION -->
+                <div class="mt-20 border-t pt-20">
+                    <h3 class="text-3xl font-bold text-blue-950 text-center mb-12">Portofolio & Rekam Jejak</h3>
+                    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                        <div class="p-8 border rounded-2xl hover:shadow-lg transition">
+                            <h4 class="text-xl font-bold text-amber-700 mb-4">Penyelesaian Sengketa Lahan</h4>
+                            <p class="text-gray-600 text-sm">Menangani lebih dari 50 kasus tumpang tindih lahan di wilayah Sangatta dan Kutai Timur dengan mediasi serta jalur pengadilan.</p>
+                        </div>
+                        <div class="p-8 border rounded-2xl hover:shadow-lg transition">
+                            <h4 class="text-xl font-bold text-amber-700 mb-4">Hukum Ketenagakerjaan</h4>
+                            <p class="text-gray-600 text-sm">Representasi hukum bagi perusahaan dan pekerja dalam sengketa industrial (PHI) di lingkungan perusahaan pertambangan.</p>
+                        </div>
+                        <div class="p-8 border rounded-2xl hover:shadow-lg transition">
+                            <h4 class="text-xl font-bold text-amber-700 mb-4">Pembelaan Pidana</h4>
+                            <p class="text-gray-600 text-sm">Pendampingan tersangka/terdakwa dalam perkara pidana umum dan khusus dengan menjamin hak-hak asasi manusia.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- PAGE: LAYANAN (EXTENDED) -->
+        <div id="page-layanan" class="page-content py-24 bg-slate-50">
+            <div class="max-w-7xl mx-auto px-4 lg:px-8 text-center mb-16">
+                <h1 class="text-5xl font-bold text-blue-950 mb-6">Praktek Hukum Kami</h1>
+                <p class="max-w-3xl mx-auto text-gray-600">Layanan profesional terintegrasi dengan pemahaman mendalam tentang hukum Indonesia dan dinamika lokal Kutai Timur.</p>
+            </div>
+            
+            <div class="max-w-7xl mx-auto px-4 lg:px-8 grid md:grid-cols-1 lg:grid-cols-2 gap-12">
+                <!-- Detail Layanan 1 -->
+                <div class="bg-white p-10 rounded-2xl shadow-sm border-l-8 border-amber-700" data-aos="fade-right">
+                    <div class="flex items-center mb-6">
+                        <div class="w-16 h-16 bg-blue-950 rounded-full flex items-center justify-center text-white mr-4 shadow-lg">
+                            <i class="fas fa-gavel text-2xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-blue-950">Litigasi Pidana & Perdata</h3>
+                    </div>
+                    <p class="text-gray-600 mb-6">Kami menyediakan jasa bantuan hukum dalam hal terjadi pelanggaran hukum pidana (pencurian, penipuan, penggelapan) maupun sengketa perdata (wanprestasi, perbuatan melawan hukum).</p>
+                    <ul class="space-y-3">
+                        <li class="flex items-center text-sm font-semibold text-gray-700"><i class="fas fa-check text-amber-600 mr-2"></i> Pendampingan di Kepolisian (Polres Kutai Timur)</li>
+                        <li class="flex items-center text-sm font-semibold text-gray-700"><i class="fas fa-check text-amber-600 mr-2"></i> Pembelaan di Pengadilan Negeri Sangatta</li>
+                        <li class="flex items-center text-sm font-semibold text-gray-700"><i class="fas fa-check text-amber-600 mr-2"></i> Eksekusi Putusan Perdata</li>
+                    </ul>
+                </div>
+
+                <!-- Detail Layanan 2 -->
+                <div class="bg-white p-10 rounded-2xl shadow-sm border-l-8 border-blue-900" data-aos="fade-left">
+                    <div class="flex items-center mb-6">
+                        <div class="w-16 h-16 bg-amber-700 rounded-full flex items-center justify-center text-white mr-4 shadow-lg">
+                            <i class="fas fa-users text-2xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-blue-950">Perselisihan Hubungan Industrial (PHI)</h3>
+                    </div>
+                    <p class="text-gray-600 mb-6">Sangatta sebagai kota industri memiliki dinamika ketenagakerjaan yang tinggi. Kami ahli dalam menyelesaikan konflik antara pemberi kerja dan pekerja.</p>
+                    <ul class="space-y-3">
+                        <li class="flex items-center text-sm font-semibold text-gray-700"><i class="fas fa-check text-amber-600 mr-2"></i> Penyelesaian PHK Sepihak</li>
+                        <li class="flex items-center text-sm font-semibold text-gray-700"><i class="fas fa-check text-amber-600 mr-2"></i> Audit Kontrak Kerja (PKWT/PKWTT)</li>
+                        <li class="flex items-center text-sm font-semibold text-gray-700"><i class="fas fa-check text-amber-600 mr-2"></i> Representasi di Dinas Tenaga Kerja</li>
+                    </ul>
+                </div>
+
+                <!-- Detail Layanan 3 -->
+                <div class="bg-white p-10 rounded-2xl shadow-sm border-l-8 border-amber-700" data-aos="fade-right">
+                    <div class="flex items-center mb-6">
+                        <div class="w-16 h-16 bg-blue-950 rounded-full flex items-center justify-center text-white mr-4 shadow-lg">
+                            <i class="fas fa-landmark text-2xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-blue-950">Tata Usaha Negara (PTUN)</h3>
+                    </div>
+                    <p class="text-gray-600 mb-6">Melakukan upaya hukum terhadap keputusan pejabat pemerintahan yang merugikan kepentingan Anda secara administratif.</p>
+                    <ul class="space-y-3">
+                        <li class="flex items-center text-sm font-semibold text-gray-700"><i class="fas fa-check text-amber-600 mr-2"></i> Gugatan SK Pemberhentian</li>
+                        <li class="flex items-center text-sm font-semibold text-gray-700"><i class="fas fa-check text-amber-600 mr-2"></i> Sengketa Izin Usaha</li>
+                    </ul>
+                </div>
+
+                <!-- Detail Layanan 4 -->
+                <div class="bg-white p-10 rounded-2xl shadow-sm border-l-8 border-blue-900" data-aos="fade-left">
+                    <div class="flex items-center mb-6">
+                        <div class="w-16 h-16 bg-amber-700 rounded-full flex items-center justify-center text-white mr-4 shadow-lg">
+                            <i class="fas fa-map-marked-alt text-2xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-blue-950">Hukum Pertanahan & Agraria</h3>
+                    </div>
+                    <p class="text-gray-600 mb-6">Fokus pada legalitas sertifikat, sengketa batas lahan, dan proses pembebasan tanah di wilayah Kutai Timur.</p>
+                    <ul class="space-y-3">
+                        <li class="flex items-center text-sm font-semibold text-gray-700"><i class="fas fa-check text-amber-600 mr-2"></i> Pengurusan Sertifikat Tanah</li>
+                        <li class="flex items-center text-sm font-semibold text-gray-700"><i class="fas fa-check text-amber-600 mr-2"></i> Sengketa Waris Properti</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- PAGE: KONTAK -->
+        <div id="page-kontak" class="page-content py-24 bg-white">
+            <div class="max-w-7xl mx-auto px-4 lg:px-8">
+                <div class="grid lg:grid-cols-2 gap-20 items-center">
+                    <div>
+                        <h2 class="text-amber-700 font-bold tracking-[0.4em] uppercase mb-4">Hubungi Kami</h2>
+                        <h1 class="text-4xl font-bold text-blue-950 mb-8">Kantor BSI & REKAN Sangatta</h1>
+                        <div class="space-y-8">
+                            <div class="flex items-start space-x-6">
+                                <div class="w-14 h-14 bg-blue-100 rounded-lg flex items-center justify-center text-blue-900 shrink-0"><i class="fas fa-map-marker-alt text-2xl"></i></div>
+                                <div>
+                                    <p class="text-xs font-bold text-blue-900 uppercase mb-1">Alamat Kantor</p>
+                                    <p class="text-lg font-bold text-gray-700">Jl. Danau Limboto 207, Kec. Sangatta Utara, Kab. Kutai Timur, Prov. Kalimantan Timur.</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start space-x-6">
+                                <div class="w-14 h-14 bg-amber-100 rounded-lg flex items-center justify-center text-amber-700 shrink-0"><i class="fas fa-phone-alt text-2xl"></i></div>
+                                <div>
+                                    <p class="text-xs font-bold text-amber-700 uppercase mb-1">Telepon & WhatsApp</p>
+                                    <p class="text-2xl font-bold text-blue-950">0811-591-305</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-gray-100 rounded-3xl h-96 flex flex-col items-center justify-center text-center p-10">
+                        <i class="fas fa-map-marked-alt text-6xl text-gray-300 mb-6"></i>
+                        <h3 class="text-xl font-bold text-blue-950 mb-4">Peta Lokasi</h3>
+                        <p class="text-gray-500 mb-6">Jl. Danau Limboto 207, Sangatta Utara</p>
+                        <a href="https://www.google.com/maps/search/Jl.+Danau+Limboto+207+Sangatta+Utara" target="_blank" class="px-8 py-3 bg-blue-950 text-white rounded-full font-bold text-sm">Lihat di Google Maps</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer (Sekarang di setiap halaman melalui navigasi SPA) -->
+    <footer class="bg-blue-950 text-white py-16">
+        <div class="max-w-7xl mx-auto px-4 lg:px-8 grid md:grid-cols-2 lg:grid-cols-4 gap-12">
+            <div class="col-span-1 lg:col-span-2">
+                <div class="flex items-center mb-6">
+                    <i class="fas fa-balance-scale text-amber-500 text-3xl mr-3"></i>
+                    <h2 class="text-2xl font-bold">BSI <span class="text-amber-500">&</span> REKAN</h2>
+                </div>
+                <p class="text-blue-200 text-sm max-w-sm">
+                    Firma Hukum terkemuka di Sangatta Utara, Kutai Timur. Memberikan solusi hukum yang tepat, akurat, dan berintegritas.
+                </p>
+            </div>
+            <div>
+                <h4 class="text-amber-500 font-bold uppercase mb-6 text-sm tracking-widest">Alamat</h4>
+                <p class="text-blue-100 text-sm leading-relaxed">
+                    Jl. Danau Limboto 207, <br>
+                    Kec. Sangatta Utara, <br>
+                    Kab. Kutai Timur, Kaltim.
+                </p>
+            </div>
+            <div>
+                <h4 class="text-amber-500 font-bold uppercase mb-6 text-sm tracking-widest">Tautan Cepat</h4>
+                <ul class="text-blue-200 text-sm space-y-2">
+                    <li><button onclick="navigateTo('home')" class="hover:text-amber-500 transition">Beranda</button></li>
+                    <li><button onclick="navigateTo('profil')" class="hover:text-amber-500 transition">Profil</button></li>
+                    <li><button onclick="navigateTo('layanan')" class="hover:text-amber-500 transition">Layanan</button></li>
+                    <li><button onclick="navigateTo('kontak')" class="hover:text-amber-500 transition">Kontak</button></li>
+                </ul>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto px-4 lg:px-8 border-t border-blue-900 mt-12 pt-8 text-center">
+            <p class="text-xs text-blue-400">&copy; 2026 BSI & REKAN. Advokat & Konsultan Hukum Kutai Timur. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        AOS.init({ duration: 1000, once: true });
+
+        function navigateTo(pageId) {
+            document.querySelectorAll('.page-content').forEach(p => p.classList.remove('active'));
+            document.querySelectorAll('.nav-btn').forEach(btn => btn.classList.remove('nav-active'));
+            const target = document.getElementById('page-' + pageId);
+            if (target) {
+                target.classList.add('active');
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+                document.querySelectorAll(`[data-page="${pageId}"]`).forEach(btn => btn.classList.add('nav-active'));
+            }
+            document.getElementById('mobile-menu').classList.add('hidden');
+        }
+
+        document.getElementById('mobile-toggle').addEventListener('click', () => document.getElementById('mobile-menu').classList.remove('hidden'));
+        document.getElementById('close-menu').addEventListener('click', () => document.getElementById('mobile-menu').classList.add('hidden'));
+
+        window.onload = () => {
+            setTimeout(() => {
+                document.getElementById('loader').style.opacity = '0';
+                setTimeout(() => { document.getElementById('loader').style.display = 'none'; }, 500);
+            }, 800);
+        };
+    </script>
+</body>
+                          </html>
